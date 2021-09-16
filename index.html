@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="center">
+       <h3 class="calc">Calculator</h3>
+   <div class="theme">
+     <h6 class="theme-box theme-div">THEME</h6>
+     <div class="toggle-no screen ">
+       <p class="theme-1">1</p>
+       <p class="theme-2">2</p>
+       <p class="theme-3">3</p>
+     </div>
+     <div class="toggle-bar theme-div dot theme-changer">
+    <div class="toggle-ball"></div>
+    </div>
+    </div> 
+  </div>
+ <div class="calculator">
+  <div class="result">
+   <div class="form">
+    <form name="form">
+    <input type="text" name="display" class="display" disabled>
+    </form> 
+   </div>
+  </div>
+  <div class="btn-container">
+    <input type="button" class="seven no num" value="7" onclick = "insert(7)">
+    <input type="button" class="eight no num" value="8" onclick = "insert(8)">
+    <input type="button" class="nine no num" value="9" onclick = "insert(9)">
+    <input type="button" class="del" value="DEL" onclick = "back()">
+    <br>
+    <input type="button" class="four no num" value="4" onclick = "insert(4)">
+    <input type="button" class="five no num"value="5" onclick = "insert(5)">
+    <input type="button" class="six no num" value="6" onclick = "insert(6)">
+    <input type="button" class="plus no num" value="+" onclick = "insert('+')">
+    <br>
+    <input type="button" class="one no num" value="1" onclick = "insert(1)">
+    <input type="button" class="two no num" value="2" onclick = "insert(2)">
+    <input type="button" class="three no num" value="3" onclick = "insert(3)">
+    <input type="button" class="minus no num" value="-" onclick = "insert('-')">
+    <br>
+    <input type="button" class="dott no num" value="." onclick = "insert('.')">
+    <input type="button" class="zero no num" value="0" onclick = "insert(0)">
+    <input type="button" class="slash no num" value="/" onclick = "insert('/')">
+    <input type="button" class="axe no num" value="x" onclick = "insert('*')">
+    <br>
+    <input type="button" class="reset no" value="RESET" onclick = "clean()">
+    <input type="button" class="equals no" value="=" onclick = "equal()">  
+  </div>
+</div> 
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yusuf</a>.
+  </div> -->
+
+<script src="index.js"></script>  
+</body>
+</html>

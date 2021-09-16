@@ -1,0 +1,490 @@
+body{
+    transition: 0.2s;
+    background-color: var(--primary1);
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.theme-1{
+  --primary1: #3b4664;
+  --secondary1: #252d44; 
+  --secondary2: #181f32;
+  --btnColor: #eae3db;
+  --btnShadowColor: #c1b4aa;
+  --btnTextColor: #424957;
+  --DelResetBtnColor: #647299;
+  --DelResetBtnShadowColor: #4a577e;
+  --equalsBtnColor: #d13f30;
+  --equalsBtnShadowColor: #a0281a;
+  --DelResetColor: white;
+  --equalsColor: white;
+  --displayTextColor: white;
+  --calcTheme_123Color: white;
+  --toggleBackgroundColor: #252d44;
+  --toggleColor: #d13f30;
+  --justify-circle: flex-start;
+  --left-margin: 2px;
+}
+
+.theme-2{
+    --primary1: #e6e6e6;
+    --secondary1: #d3cdcd; 
+    --secondary2: #eeeeee;
+    --btnColor: #e5e4e0;
+    --btnShadowColor: #b8b1a6;
+    --btnTextColor: #35352c;
+    --DelResetBtnColor: #388187;
+    --DelResetBtnShadowColor: #256c72;
+    --equalsBtnColor: #c85401;
+    --equalsBtnShadowColor: #943f02;
+    --DelResetColor: white;
+    --equalsColor: white;
+    --displayTextColor: #35352d;
+    --calcTheme_123Color: #35352c;
+    --toggleBackgroundColor: #d3cdcd;
+    --toggleColor: #c65401;
+    --justify-circle: center;
+    --left-margin: 16px;
+}
+
+.theme-3{
+    --primary1: #17062a;
+    --secondary1: #1e0836; 
+    --secondary2: #1e0836;
+    --btnColor: #331b4d;
+    --btnShadowColor: #6c1c85;
+    --btnTextColor: #fce438;
+    --DelResetBtnColor: #56077c;
+    --DelResetBtnShadowColor: #9e13ce;
+    --equalsBtnColor: #00decf;
+    --equalsBtnShadowColor: #52f6eb;
+    --DelResetColor: white;
+    --equalsColor: #034b4c;
+    --displayTextColor: #fce438;
+    --calcTheme_123Color: #fce438;
+    --toggleBackgroundColor: #1e0836;
+    --toggleColor: #00dbd2;
+    --justify-circle: flex-end;
+    --left-margin: 33px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+button{
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    outline: none;
+  }
+
+.center{
+    color: var(--calcTheme_123Color);
+    margin-top: -23rem;
+    display: flex;
+    position: absolute;
+}
+
+.calc{
+    margin-left: .5rem;
+    position: relative;
+    margin-bottom: -30rem;
+}
+
+.theme{
+    margin-left: 14rem;
+    position: relative;
+    bottom: .5rem;
+}
+
+.toggle-no{
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.toggle-ball{
+        display: flex;
+        background-color: var(--toggleColor);
+        width: 13px;
+        height: 13px;
+        max-width: 3rem;
+        position: relative;
+        margin-left: var(--left-margin);
+        margin-top: 1.99px;
+        border-radius: 60px;
+        transition: 0.2s;
+}
+
+.toggle-bar{
+    transition: .2s;
+    cursor: pointer;
+    background-color: var(--toggleBackgroundColor);
+    display: flex;
+    width: 3rem;
+    height: 1rem;
+    position: relative;
+    left: -9px;
+    bottom: 15px;
+    border-radius: 60px;
+}
+
+.theme-box{
+   position: relative;
+   bottom: -12px;
+   left: -60px;
+}
+
+.display{
+    transition: 0.2s;
+    background-color:   var(--secondary2) ;
+    color: var(--displayTextColor);
+    font-size: 40px;
+    width: 24rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-bottom: 240px;
+    outline: none;
+    border-style: none;
+    padding: 10px;
+    text-align: right;
+}
+
+.toggle-no{
+    display: flex;
+    grid-gap: 6px;
+    font-size:x-small;
+    font-weight: lighter;
+    letter-spacing: 0.22rem;
+    position: relative;
+    left: -10px;
+    top: -20px;
+}
+
+.one1, .two2, .three3{
+    cursor: pointer;
+}
+
+.btn-container{
+    transition: 0.2s;
+    display: grid;
+    grid-gap: 10px;
+    background-color: var(--secondary1);
+    width: 24rem;
+    height: 20rem;
+    position: absolute;
+    top: 240px;
+    border-radius: 0.5rem;
+    
+}
+
+.no{
+    transition: 0.2s;
+    color: var(--btnTextColor);
+    width: 80px;
+    height: 45px;
+    box-shadow: 0px 3.5px  var(--btnShadowColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 0px;
+    
+}
+
+.num{
+    transition: 0.2s;
+    font-size: x-large;
+    font-weight:normal;
+}
+
+.seven{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 12.5px;
+    top: 12.5px;
+    border-radius: 5px;
+    
+}
+
+.eight{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 105.5px;
+    top: -42.25px;
+    border-radius: 5px;
+    
+
+    
+}
+
+.nine{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 197.5px;
+    top: -97.5px;
+    border-radius: 5px;
+    
+
+}
+
+.del{ 
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--DelResetColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DelResetBtnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 290.5px;
+    top: -152.25px;
+    border-radius: 5px;
+    box-shadow: 0px 3.5px  var(--DelResetBtnShadowColor);
+}
+
+.four{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 12.5px;
+    top: -158.5px;
+    border-radius: 5px;
+    
+}
+
+.five{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 105.5px;
+    top: -213.5px;
+    border-radius: 5px;
+    
+}
+
+.six{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 197.5px;
+    top: -268.5px;
+    border-radius: 5px;
+    
+}
+
+.plus{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 290.5px;
+    top: -323.5px;
+    border-radius: 5px;
+    
+}
+
+.one{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 12.5px;
+    top: -328.5px;
+    border-radius: 5px;
+    
+}
+
+.two{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 105.5px;
+    top: -383.5px;
+    border-radius: 5px;
+    
+}
+
+.three{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 197.5px;
+    top: -438.5px;
+    border-radius: 5px;
+    
+    
+}
+
+.minus{ 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 290.5px;
+    top: -493.5px;
+    border-radius: 5px;
+}
+
+.dott{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 12.5px;
+    top: -498.5px;
+    border-radius: 5px;
+    
+}
+
+.zero{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 105.5px;
+    top: -553.5px;
+    border-radius: 5px;
+    
+}
+
+.slash{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 197.5px;
+    top: -608.5px;
+    border-radius: 5px;
+    
+    
+}
+
+.axe{ 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 80px;
+    height: 45px;
+    position: relative;
+    left: 290.5px;
+    top: -663.5px;
+    border-radius: 5px;
+}
+
+.reset{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--DelResetColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DelResetBtnColor);
+    width: 174px;
+    height: 45px;
+    position: relative;
+    left: 12.5px;
+    top: -668.5px;
+    border-radius: 5px;
+    box-shadow: 0px 3.5px  var(--DelResetBtnShadowColor);
+}
+
+.equals{
+
+    color: var(--equalsColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--equalsBtnColor); 
+    width: 174px;
+    height: 45px;
+    position: relative;
+    left: 197.5px;
+    top: -723.5px;
+    border-radius: 5px;
+    box-shadow: 0px 3.5px  var(--equalsBtnShadowColor);
+}
