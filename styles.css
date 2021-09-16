@@ -88,16 +88,21 @@ button{
   }
 
 .center{
+    bottom: 0px;
+    top: 100px;
+    margin-top: 0px;
+    height: 23px;
     color: var(--calcTheme_123Color);
-    margin-top: -23rem;
     display: flex;
     position: absolute;
 }
 
 .calc{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     margin-left: .5rem;
     position: relative;
-    margin-bottom: -30rem;
 }
 
 .theme{
@@ -144,6 +149,12 @@ button{
 }
 
 .display{
+    display: flex;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
     transition: 0.2s;
     background-color:   var(--secondary2) ;
     color: var(--displayTextColor);
@@ -152,10 +163,9 @@ button{
     height: 6rem;
     border-radius: 0.5rem;
     position: relative;
-    margin-bottom: 240px;
+    top: -122px;
     outline: none;
     border-style: none;
-    padding: 10px;
     text-align: right;
 }
 
@@ -176,8 +186,6 @@ button{
 
 .btn-container{
     transition: 0.2s;
-    display: grid;
-    grid-gap: 10px;
     background-color: var(--secondary1);
     width: 24rem;
     height: 20rem;
@@ -190,8 +198,6 @@ button{
 .no{
     transition: 0.2s;
     color: var(--btnTextColor);
-    width: 80px;
-    height: 45px;
     box-shadow: 0px 3.5px  var(--btnShadowColor);
     cursor: pointer;
     display: flex;
@@ -233,7 +239,7 @@ button{
     height: 45px;
     position: relative;
     left: 105.5px;
-    top: -42.25px;
+    top: -32.5px;
     border-radius: 5px;
     
 
@@ -250,7 +256,7 @@ button{
     height: 45px;
     position: relative;
     left: 197.5px;
-    top: -97.5px;
+    top: -77.5px;
     border-radius: 5px;
     
 
@@ -269,7 +275,7 @@ button{
     height: 45px;
     position: relative;
     left: 290.5px;
-    top: -152.25px;
+    top: -122.25px;
     border-radius: 5px;
     box-shadow: 0px 3.5px  var(--DelResetBtnShadowColor);
 }
@@ -284,7 +290,7 @@ button{
     height: 45px;
     position: relative;
     left: 12.5px;
-    top: -158.5px;
+    top: -125.25px;
     border-radius: 5px;
     
 }
@@ -299,7 +305,7 @@ button{
     height: 45px;
     position: relative;
     left: 105.5px;
-    top: -213.5px;
+    top: -170.5px;
     border-radius: 5px;
     
 }
@@ -314,7 +320,7 @@ button{
     height: 45px;
     position: relative;
     left: 197.5px;
-    top: -268.5px;
+    top: -215.25px;
     border-radius: 5px;
     
 }
@@ -329,7 +335,7 @@ button{
     height: 45px;
     position: relative;
     left: 290.5px;
-    top: -323.5px;
+    top: -260.5px;
     border-radius: 5px;
     
 }
@@ -344,7 +350,7 @@ button{
     height: 45px;
     position: relative;
     left: 12.5px;
-    top: -328.5px;
+    top: -263.5px;
     border-radius: 5px;
     
 }
@@ -359,7 +365,7 @@ button{
     height: 45px;
     position: relative;
     left: 105.5px;
-    top: -383.5px;
+    top: -308.5px;
     border-radius: 5px;
     
 }
@@ -374,7 +380,7 @@ button{
     height: 45px;
     position: relative;
     left: 197.5px;
-    top: -438.5px;
+    top: -353.5px;
     border-radius: 5px;
     
     
@@ -390,7 +396,7 @@ button{
     height: 45px;
     position: relative;
     left: 290.5px;
-    top: -493.5px;
+    top: -398.5px;
     border-radius: 5px;
 }
 
@@ -404,7 +410,7 @@ button{
     height: 45px;
     position: relative;
     left: 12.5px;
-    top: -498.5px;
+    top: -400.5px;
     border-radius: 5px;
     
 }
@@ -419,7 +425,7 @@ button{
     height: 45px;
     position: relative;
     left: 105.5px;
-    top: -553.5px;
+    top: -445.5px;
     border-radius: 5px;
     
 }
@@ -434,7 +440,7 @@ button{
     height: 45px;
     position: relative;
     left: 197.5px;
-    top: -608.5px;
+    top: -490.5px;
     border-radius: 5px;
     
     
@@ -450,7 +456,7 @@ button{
     height: 45px;
     position: relative;
     left: 290.5px;
-    top: -663.5px;
+    top: -535.5px;
     border-radius: 5px;
 }
 
@@ -467,7 +473,7 @@ button{
     height: 45px;
     position: relative;
     left: 12.5px;
-    top: -668.5px;
+    top: -540.5px;
     border-radius: 5px;
     box-shadow: 0px 3.5px  var(--DelResetBtnShadowColor);
 }
@@ -484,7 +490,7 @@ button{
     height: 45px;
     position: relative;
     left: 197.5px;
-    top: -723.5px;
+    top: -585.5px;
     border-radius: 5px;
     box-shadow: 0px 3.5px  var(--equalsBtnShadowColor);
 }
