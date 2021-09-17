@@ -169,7 +169,7 @@ button{
     height: 6rem;
     border-radius: 0.5rem;
     position: absolute;
-    top: 130px;
+    top: 135px;
     outline: none;
     border-style: none;
     text-align: right;
@@ -211,19 +211,6 @@ button{
     align-items: center;
     position: absolute;
     padding-top: 0px;
-}
-
-.no::after{
-    transition: 300ms;
-    color: var(--btnTextColor);
-    box-shadow: 0px 3.5px  var(--btnShadowColor);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    padding-top: 0px;
-    transition: all .5s ease 0s; 
 }
 
 .num{
