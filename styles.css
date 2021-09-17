@@ -1,7 +1,8 @@
 body{
-    transition: 0.2s;
+    transition: 300ms;
     background-color: var(--primary1);
     font-family: 'Spartan', sans-serif;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,64 +12,64 @@ body{
 
 
 .theme-1{
-  --primary1: #3b4664;
-  --secondary1: #252d44; 
-  --secondary2: #181f32;
-  --btnColor: #eae3db;
-  --btnShadowColor: #c1b4aa;
-  --btnTextColor: #424957;
+  --primary1: hsl(222, 26%, 31%);
+  --secondary1: hsl(223, 31%, 20%); 
+  --secondary2: hsl(224, 36%, 15%);
+  --btnColor: hsl(30, 25%, 89%);
+  --btnShadowColor: hsl(28, 16%, 65%);
+  --btnTextColor: hsl(221, 14%, 31%);
   --DelResetBtnColor: #647299;
   --DelResetBtnShadowColor: #4a577e;
-  --equalsBtnColor: #d13f30;
-  --equalsBtnShadowColor: #a0281a;
+  --equalsBtnColor: hsl(6, 63%, 50%);
+  --equalsBtnShadowColor: hsl(6, 70%, 34%);
   --DelResetColor: white;
   --equalsColor: white;
   --displayTextColor: white;
   --calcTheme_123Color: white;
-  --toggleBackgroundColor: #252d44;
+  --toggleBackgroundColor: hsl(223, 31%, 20%);
   --toggleColor: #d13f30;
   --justify-circle: flex-start;
   --left-margin: 2px;
 }
 
 .theme-2{
-    --primary1: #e6e6e6;
-    --secondary1: #d3cdcd; 
-    --secondary2: #eeeeee;
-    --btnColor: #e5e4e0;
-    --btnShadowColor: #b8b1a6;
-    --btnTextColor: #35352c;
-    --DelResetBtnColor: #388187;
-    --DelResetBtnShadowColor: #256c72;
-    --equalsBtnColor: #c85401;
-    --equalsBtnShadowColor: #943f02;
+    --primary1: hsl(0, 0%, 90%);
+    --secondary1: hsl(0, 5%, 81%); 
+    --secondary2: hsl(0, 0%, 93%);
+    --btnColor: hsl(45, 7%, 89%);
+    --btnShadowColor: hsl(35, 11%, 61%);
+    --btnTextColor: hsl(60, 10%, 19%);
+    --DelResetBtnColor: hsl(185, 42%, 37%);
+    --DelResetBtnShadowColor: hsl(185, 58%, 25%);
+    --equalsBtnColor: hsl(25, 98%, 40%);
+    --equalsBtnShadowColor: hsl(25, 99%, 27%);
     --DelResetColor: white;
     --equalsColor: white;
     --displayTextColor: #35352d;
     --calcTheme_123Color: #35352c;
-    --toggleBackgroundColor: #d3cdcd;
-    --toggleColor: #c65401;
+    --toggleBackgroundColor: hsl(0, 5%, 81%);
+    --toggleColor: hsl(25, 98%, 40%);
     --justify-circle: center;
     --left-margin: 16px;
 }
 
 .theme-3{
-    --primary1: #17062a;
-    --secondary1: #1e0836; 
-    --secondary2: #1e0836;
-    --btnColor: #331b4d;
-    --btnShadowColor: #6c1c85;
-    --btnTextColor: #fce438;
-    --DelResetBtnColor: #56077c;
-    --DelResetBtnShadowColor: #9e13ce;
-    --equalsBtnColor: #00decf;
-    --equalsBtnShadowColor: #52f6eb;
+    --primary1: hsl(268, 75%, 9%);
+    --secondary1: hsl(268, 71%, 12%); 
+    --secondary2: hsl(268, 71%, 12%);
+    --btnColor: hsl(268, 47%, 21%) ;
+    --btnShadowColor: hsl(290, 70%, 36%);
+    --btnTextColor: hsl(52, 100%, 62%);
+    --DelResetBtnColor: hsl(281, 89%, 26%); 
+    --DelResetBtnShadowColor: hsl(285, 91%, 52%);
+    --equalsBtnColor: hsl(176, 100%, 44%);
+    --equalsBtnShadowColor: hsl(177, 92%, 70%);
     --DelResetColor: white;
     --equalsColor: #034b4c;
     --displayTextColor: #fce438;
     --calcTheme_123Color: #fce438;
-    --toggleBackgroundColor: #1e0836;
-    --toggleColor: #00dbd2;
+    --toggleBackgroundColor: hsl(268, 71%, 12%);
+    --toggleColor: hsl(176, 100%, 44%);
     --justify-circle: flex-end;
     --left-margin: 33px;
 }
@@ -78,7 +79,6 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
 
 button{
     box-shadow: 0px 0px 0px transparent;
@@ -117,7 +117,6 @@ button{
 }
 
 .toggle-ball{
-        display: flex;
         background-color: var(--toggleColor);
         width: 13px;
         height: 13px;
@@ -126,7 +125,7 @@ button{
         margin-left: var(--left-margin);
         margin-top: 1.99px;
         border-radius: 60px;
-        transition: 0.2s;
+        transition: 300ms;
 }
 
 .toggle-bar{
@@ -148,6 +147,13 @@ button{
    left: -60px;
 }
 
+
+.calculator{
+    position: absolute;
+    top: 0px;
+    margin-left: -388px;
+}
+
 .display{
     display: flex;
     margin-bottom: 0px;
@@ -155,15 +161,15 @@ button{
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 0px;
-    transition: 0.2s;
-    background-color:   var(--secondary2) ;
+    transition: 300ms;
+    background-color: var(--secondary2) ;
     color: var(--displayTextColor);
     font-size: 40px;
     width: 24rem;
     height: 6rem;
     border-radius: 0.5rem;
-    position: relative;
-    top: -122px;
+    position: absolute;
+    top: 130px;
     outline: none;
     border-style: none;
     text-align: right;
@@ -185,7 +191,7 @@ button{
 }
 
 .btn-container{
-    transition: 0.2s;
+    transition: 300ms;
     background-color: var(--secondary1);
     width: 24rem;
     height: 20rem;
@@ -196,7 +202,7 @@ button{
 }
 
 .no{
-    transition: 0.2s;
+    transition: 300ms;
     color: var(--btnTextColor);
     box-shadow: 0px 3.5px  var(--btnShadowColor);
     cursor: pointer;
@@ -205,12 +211,24 @@ button{
     align-items: center;
     position: absolute;
     padding-top: 0px;
-    
+}
+
+.no::after{
+    transition: 300ms;
+    color: var(--btnTextColor);
+    box-shadow: 0px 3.5px  var(--btnShadowColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 0px;
+    transition: all .5s ease 0s; 
 }
 
 .num{
-    transition: 0.2s;
-    font-size: x-large;
+    transition: 300ms;
+    font-size: 32px;
     font-weight:normal;
 }
 
